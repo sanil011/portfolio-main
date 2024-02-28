@@ -50,8 +50,6 @@ function App() {
           <About />
           <Technologies />
           <Jobs />
-         
-          </div>
         
           <Project dark={onClick} />
         </div>

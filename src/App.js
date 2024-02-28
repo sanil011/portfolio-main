@@ -50,20 +50,7 @@ function App() {
           <About />
           <Technologies />
           <Jobs />
-          // <div className="py-16 px-2 tablet:px-12 desktop:px-20">
-          //   <p className="name desktop:text-3xl tablet:text-xl text-base ">wanna hear a secret?</p>
-          //   <p className="name desktop:text-5xl tablet:text-2xl text-xl ">why i choose Engineering?</p>
-          //   <div className="flex gap-4 items-center mt-8">
-          //     <div className="w-[250px] h-[150px] tablet:w-[350px] tablet:h-[250px] desktop:w-[450px] desktop:h-[300px]">
-          //     <img src={Cassette} className="object-cover w-full h-full" />
-          //     </div>
-          //     <audio controls>
-          //       <source src="horse.ogg" type="audio/ogg" />
-          //       <source src={Sound} type="audio/mpeg" />
-          //       Your browser does not support the audio tag.
-          //     </audio>
-
-          //   </div>
+         
           </div>
         
           <Project dark={onClick} />

@@ -5,6 +5,12 @@ module.exports = {
     extend: {
       fontFamily: {
         spaceFont: ['Poppins', "sans-serif"],
+        "open-sans": '"Open Sans", sans-serif',
+        "work-sans": '"Work Sans", sans-serif',
+        aileron: '"Aileron" , sans-serif',
+        inter: '"Inter", sans-serif',
+        "be-vietnam": '"Be Vietnam", sans-serif',
+        "mulish": '"Mulish", sans-serif'
       },
       screens: {
         'tablet': '600px',

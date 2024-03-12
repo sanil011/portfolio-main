@@ -91,7 +91,7 @@ function Project({ dark }) {
                                             </div>
                                         </div>
 
-                                        <p className={`text-base ${dark ? "text-black" : 'text-gray-300'} opacity-80 mx-4`}>
+                                        <p className={`text-base font-inter ${dark ? "text-black" : 'text-gray-300'} opacity-80 mx-4`}>
                                                 {project.about}
                                             </p>
                                     </header>

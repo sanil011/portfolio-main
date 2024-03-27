@@ -20,7 +20,7 @@ function Project({ dark }) {
             hostedLink: "https://code-share-ny9d.onrender.com", techStack: ["Reactjs", "ContextApi", "Tailwindcss", "Expressjs", "Socket.io"], about: "A code editor in which by sharing the roomId you can write a code that your friend can also see in real time. There is also a doubt section where you can ask your doubt and chat with other memebers."
         },
         {
-            id: "3", heading: "Google Doc Clone", githubLink: "https://github.com/sanil011/SketchBoard", pic: Sketch,
+            id: "3", heading: "Sketch Board", githubLink: "https://github.com/sanil011/SketchBoard", pic: Sketch,
             hostedLink: "https://sketch-board-two.vercel.app/", techStack: ["Vite","React","Typescript","Css"], about: "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience."
         },
         // {

@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.js", "**/*.tsx", "src/components/Icon/Arrow.js"],
   "exclude": ["node_modules"]
 }

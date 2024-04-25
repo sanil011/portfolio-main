@@ -1,3 +1,8 @@
+import ViewContainer from "@/components/layout/viewContainer";
+import Header from "@/components/main/header";
+import About from "@/components/main/about";
+import ExperienceSection from "@/components/main/ExperienceSection";
+import Project from "@/components/main/Project";
 
 
 export default function Home() {
@@ -5,7 +10,12 @@ export default function Home() {
     <main
       className=''
     >
-      <h1>Hii Shreya</h1>
+      <ViewContainer>
+        <Header />
+        <About />
+        <ExperienceSection />
+        <Project/>
+      </ViewContainer>
     </main>
   );
 }

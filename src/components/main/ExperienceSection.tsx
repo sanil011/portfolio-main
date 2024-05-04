@@ -5,12 +5,12 @@ import JobCard from '../card/JobCard'
 
 
 const ExperienceSection = () => {
-    const jobs = [{ company: "UnstudioAi", duration: "August,2023 - current", post: "Software Developer Intern", link: "https://www.linkedin.com/company/unstudioai/" },
+    const jobs = [{ company: "UnstudioAi", duration: "Aug,2023 - current", post: "Software Developer Intern", link: "https://www.linkedin.com/company/unstudioai/" },
     { company: "ZeviAi", duration: "May,2023 - June,2023", post: "Frontend Engineering Intern", link: "https://www.linkedin.com/company/zevi-ai/" },
-    { company: "Oyesters", duration: "November,2022 - January,2023", post: "Frontend Intern", link: "https://www.linkedin.com/company/oyesters/" },];
+    { company: "Oyesters", duration: "Nov,2022 - Jan,2023", post: "Frontend Intern", link: "https://www.linkedin.com/company/oyesters/" },];
     return (
         <Section>
-            <h1 className='text-main font-semibold leading-snug text-3xl'>Where i've worked.</h1>
+            <h1 className='text-lightText dark:text-main font-semibold leading-snug text-xl sm:text-3xl'>Where i've worked.</h1>
             {jobs && jobs.map((job, index) => {
                 return (
                     <JobCard key={index} {...job} />

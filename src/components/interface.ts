@@ -7,3 +7,12 @@ export interface ProjectProps {
   hostedLink: string;
   about: string;
 }
+
+export interface OtherProjectProps {
+  id: string,
+  description:string,
+  title: string;
+  github: string;
+  link: string;
+  tech: string[];
+}

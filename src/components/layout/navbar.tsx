@@ -22,9 +22,8 @@ const Navbar: React.FunctionComponent = () => {
     const { setTheme, theme } = useTheme()
 
     return (
-        <nav className='navbar | mt-6'>
-            <ViewContainer className='flex items-center min-w-[1280px] max-w-[1280px] justify-between'>
-                <h1>Sanil</h1>
+        <nav className='navbar | pt-6 dark:bg-[#1a1a1e]'>
+            <ViewContainer className='flex items-center w-10/12 mx-auto max-w-[1280px] justify-end'>
                 <div className='flex items-center gap-2'>
                     <ul className='navbar-option-list | flex flex-row items-center justify-end gap-2'>
                         {getPathMap()?.map((item: PathMapProps, index: number) => (
@@ -40,12 +39,20 @@ const Navbar: React.FunctionComponent = () => {
                             </li>
                         ))}
                     </ul>
-                    {/* {theme == 'light' && <button className='p-3 rounded-sm hover:bg-gray-100'>
-                        <Sun className='cursor-pointer' size={22} onClick={() => setTheme('dark')} />
-                    </button>}
-                    {theme == 'dark' && <button className='p-3 rounded-sm hover:bg-gray-100'>
-                        <Moon className='cursor-pointer' size={22} onClick={() => setTheme('light')} />
-                    </button>} */}
+                    {theme == 'light' &&
+                        <div className='hover:bg-gray-100'>
+                            <button className='p-3 rounded-sm '>
+                                <Sun className='cursor-pointer' size={20} onClick={() => setTheme('dark')} />
+                            </button>
+                        </div>
+                    }
+                    {theme == 'dark' &&
+                        <div className='hover:bg-gray-600 w-4'>
+                            <button className=' rounded-sm '>
+                                <Moon className='cursor-pointer' size={20} onClick={() => setTheme('light')} />
+                            </button>
+                        </div>
+                    }
                 </div>
             </ViewContainer>
         </nav>

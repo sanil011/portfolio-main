@@ -6,14 +6,15 @@ import React from 'react';
 import { ThemeProvider } from "@/components/theme-provider";
 // Supports weights 100-900
 import '@fontsource-variable/inter';
+import '@fontsource/poppins';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <React.Fragment>
+    <React.Fragment
+    >
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
-        enableSystem
+        defaultTheme=""
         disableTransitionOnChange
       >
       <Navbar />

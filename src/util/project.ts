@@ -30,11 +30,43 @@ export const mainProject = () => {
         id: "3",
         name: "Sketch Board",
         githubLink: "https://github.com/sanil011/SketchBoard",
-        pic: '/sketch.png',
+        pic: '/newSketch.png',
         hostedLink: "https://sketch-board-two.vercel.app/",
         techStack: ["Vite", "React", "Typescript", "Css"],
         about:
           "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience.",
       },
     ];
+}
+
+export const otherProjects = () => {
+  return [
+    {
+      id: "1",
+      title: "Tic Tac Toe",
+      github: "https://github.com/sanil011/crafts",
+      link: "https://crafts-jade.vercel.app/",
+      tech: ["React", "Tailwindcss"],
+      description:
+        "Create a versatile TicTacToe game with pause/resume, a disabled initial restart button, and real-time status updates. Add a history feature for seamless backward and forward navigation during gameplay.",
+    },
+    {
+      id: "2",
+      title: "Calender Application",
+      github: "https://github.com/sanil011/calender",
+      link: "https://calender-99b907.netlify.app/",
+      description:
+        "Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting.",
+      tech: ["React", "Firebase", "Redux"],
+    },
+    {
+      id: "3",
+      title: "Estate",
+      github: "https://github.com/sanil011/Estates",
+      link: "https://estates-teal.vercel.app/",
+      description:
+        "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.",
+      tech: ["React", "Tailwind", "Redux", "MUI"],
+    }
+  ];
 }

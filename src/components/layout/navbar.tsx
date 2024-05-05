@@ -6,7 +6,7 @@ import { cn } from '@/util/helper';
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import ViewContainer from './viewContainer';
-import { motion } from "framer-motion";
+import { color, motion } from "framer-motion";
 // @ts-ignore 
 import useSound from 'use-sound';
 
@@ -38,7 +38,8 @@ const Navbar: React.FunctionComponent = () => {
                             <li key={index}>
                                 {item?.link &&
                                    
-                                        <motion.p
+                                    <motion.p
+                                        whileHover={{color:"orange"}}
                                             onMouseEnter={() => {
                                                 const elem = document.getElementById(`"border-animation"+${index}`);
                                                 if(elem)
@@ -55,7 +56,7 @@ const Navbar: React.FunctionComponent = () => {
                                             }}
                                     >
                                         <Link
-                                            className={cn('navbar-option-item list-none text-base text-black  dark:text-main hover:text-orange')}
+                                            className={cn('navbar-option-item list-none text-base text-black  dark:text-main hover:dark:text-orange hover:text-orange')}
                                             href={item?.link}
                                             target={item.title == "Resume" ? "_blank":""}
                                             rel={item.title == "Resume" ? "noopener noreferrer":""}

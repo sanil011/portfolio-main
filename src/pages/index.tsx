@@ -1,4 +1,3 @@
-'use client'
 import ViewContainer from "@/components/layout/viewContainer";
 import Header from "@/components/main/header";
 import About from "@/components/main/about";
@@ -6,9 +5,15 @@ import ExperienceSection from "@/components/main/ExperienceSection";
 import Project from "@/components/main/Project";
 import Footer from "@/components/layout/footer";
 import Navbar from "@/components/layout/navbar";
+import Head from 'next/head';
 
 export default function Home() {
   return (
+    <>
+      <Head>
+        <title>Sanil</title>
+        <link rel="shortcut icon" href="/icon.ico" />
+      </Head>
     <main
       className='dark:bg-[#1a1a1e] min-h-screen'
     >
@@ -22,5 +27,6 @@ export default function Home() {
       <hr className=" w-10/12 max-w-[1280px] mx-auto my-20"/>
         <Footer/>
     </main>
+    </>
   );
 }

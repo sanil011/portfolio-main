@@ -18,8 +18,9 @@ const Footer = () => {
           <ViewContainer className='flex gap-4 sm:flex-row flex-col items-center w-10/12 mx-auto max-w-[1280px] justify-between'>
               <h1 className='font-poppin text-lg md:text-2xl'>Developed By Sanil</h1>
               <div className='flex items-center gap-4'>
-                  {icons?.map((icon) => (
+                  {icons?.map((icon,idx) => (
                       <a
+                          key={idx}
                           href={icon.link}
                           target="_blank"
                           rel="noopener noreferrer"

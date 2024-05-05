@@ -10,7 +10,7 @@ const ExperienceSection = () => {
     { company: "Oyesters", duration: "Nov,2022 - Jan,2023", post: "Frontend Intern", link: "https://www.linkedin.com/company/oyesters/" },];
     return (
         <Section>
-            <h1 className='text-lightText dark:text-main font-semibold leading-snug text-xl sm:text-3xl'>Where i've worked.</h1>
+            <h1 className='text-lightText dark:text-main font-semibold leading-snug text-xl sm:text-3xl'>Where i&apos;ve worked.</h1>
             {jobs && jobs.map((job, index) => {
                 return (
                     <JobCard key={index} {...job} />

@@ -18,7 +18,7 @@ export default function Home() {
       className='dark:bg-[#1a1a1e] min-h-screen'
     >
       <Navbar/>
-      <ViewContainer className="max-w-[1280px]  w-[95%] md:w-11/12 lg:w-10/12 mx-auto">
+      <ViewContainer className="max-w-[1280px]  w-[95%] md:w-11/12 lg:w-8/12 mx-auto">
         <Header />
         <About />
         <ExperienceSection />

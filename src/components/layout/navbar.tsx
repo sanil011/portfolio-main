@@ -84,17 +84,17 @@ const Navbar: React.FunctionComponent = () => {
                         ))}
                     </ul>
                     {theme == 'light' &&
-                        <div className='hover:bg-gray-100 w-11 h-10 flex justify-center cursor-pointer items-center rounded-sm'>
-                            <button className='rounded-sm '>
+                        <div className='hover:bg-gray-100 w-11 h-10 flex justify-center cursor-pointer items-center rounded-md'>
+
                                 <Sun size={20} onClick={() => { setTheme('dark'); play()}} />
-                            </button>
+
                         </div>
                     }
                     {theme == 'dark' &&
-                        <div className='hover:bg-[#272728] w-11 h-10 flex justify-center cursor-pointer items-center rounded-sm'>
-                            <button className=' rounded-sm '>
+                        <div className='hover:bg-[#272728] w-11 h-10 flex justify-center cursor-pointer items-center rounded-md'>
+
                                 <Moon size={20} onClick={() => { setTheme('light'); play()}} />
-                            </button>
+
                         </div>
                     }
                 </div>

@@ -6,12 +6,12 @@ import { motion } from 'framer-motion';
 const Header = () => {
   
     return (
-        <div className='flex items-center gap-8 pt-32 '>
+        <div className='flex items-center gap-8 pt-28 '>
             <motion.div
                 className="profile-icon-wrapper cursor-pointer w-fit h-fit"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
-                <div className="w-24 h-24 ">
+                <div className="w-32 h-32 ">
                     <img className="w-full  transition-all hover:grayscale-0 grayscale h-full rounded-full object-cover" src='/profile.jpeg' />
                 </div>
             </motion.div>

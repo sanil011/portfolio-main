@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { getPathMap } from '@/util/pathMap';
 import Link from 'next/link';
 import { cn } from '@/util/helper';
@@ -20,8 +20,14 @@ interface PathMapProps {
 
 
 const Navbar: React.FunctionComponent = () => {
-    const { setTheme, theme } = useTheme()
+    const { setTheme, theme } = useTheme();
+    const [mounted, setMounted] = useState(false);
     const [play] = useSound("/click.mp3");
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+    
+    if (!mounted) return null;
 
     return (
         <nav className='navbar | pt-6 dark:bg-[#1a1a1e]'>

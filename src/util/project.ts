@@ -67,6 +67,14 @@ export const otherProjects = () => {
       description:
         "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.",
       tech: ["React", "Tailwind", "Redux", "MUI"],
-    }
+    },
+    {
+      id: "4",
+      title: "Sheets",
+      github: "https://github.com/sanil011/Estates",
+      link: "https://sanil011.github.io/ExcelClone/",
+      description:"This tool offers a comprehensive range of functionalities, including isolated cell text formatting for precise customization. It enables seamless cell-to-cell relationships via formulas, ensuring that changes in one cell automatically update dependent cells, with warnings for cyclic relationships.",
+      tech: ["Javascript","CSS","HTML"],
+    },
   ];
 }

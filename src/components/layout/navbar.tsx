@@ -1,12 +1,15 @@
 'use client'
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 import { getPathMap } from '@/util/pathMap';
 import Link from 'next/link';
 import { cn } from '@/util/helper';
-import { useRouter } from 'next/router';
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import ViewContainer from './viewContainer';
+import { motion } from "framer-motion";
+// @ts-ignore 
+import useSound from 'use-sound';
+
 
 
 interface PathMapProps {
@@ -17,39 +20,73 @@ interface PathMapProps {
 
 
 const Navbar: React.FunctionComponent = () => {
-    const router = useRouter();
-    let pathName = router?.pathname;
     const { setTheme, theme } = useTheme()
+    const [play] = useSound("/click.mp3");
 
     return (
         <nav className='navbar | pt-6 dark:bg-[#1a1a1e]'>
             <ViewContainer className='flex items-center w-10/12 mx-auto max-w-[1280px] justify-end'>
                 <div className='flex items-center gap-2'>
-                    <ul className='navbar-option-list | flex flex-row items-center justify-end gap-2'>
+                    <ul className='navbar-option-list | flex flex-row items-center  justify-end gap-4'>
                         {getPathMap()?.map((item: PathMapProps, index: number) => (
                             <li key={index}>
                                 {item?.link &&
-                                    <Link
-                                        className={cn('navbar-option-item list-none text-base ',
-                                            pathName == 'item.link' && 'underline underline-offset-1')}
-                                        href={item?.link}
+                                   
+                                        <motion.p
+                                            onMouseEnter={() => {
+                                                const elem = document.getElementById(`"border-animation"+${index}`);
+                                                if(elem)
+                                                elem.style.width = "100%"
+                                            }}
+                                            onMouseLeave={() => {
+                                                const elem = document.getElementById(`"border-animation"+${index}`);
+                                                if(elem)
+                                                elem.style.width = "0%"
+                                            }}
+                                            style={{
+                                                position: "relative",
+                                                overflow: "hidden",
+                                            }}
                                     >
+                                        <Link
+                                            className={cn('navbar-option-item list-none text-base text-black  dark:text-main hover:text-orange')}
+                                            href={item?.link}
+                                            target={item.title == "Resume" ? "_blank":""}
+                                            rel={item.title == "Resume" ? "noopener noreferrer":""}
+                                        >
+                                            <motion.span
+                                                id={`"border-animation"+${index}`}
+                                                style={{
+                                                    position: "absolute",
+                                                    bottom: 0,
+                                                    left: 0,
+                                                    width: 0,
+                                                    zIndex:20,
+                                                    height: "2px",
+                                                    background: "orange",
+                                                    transition: "all",
+                                                    transitionDuration:"0.3s"
+                                                }}
+
+                                            />
                                         {item?.title}
-                                    </Link>}
+                                    </Link>
+                                        </motion.p>
+                                    }
                             </li>
                         ))}
                     </ul>
                     {theme == 'light' &&
-                        <div className='hover:bg-gray-100'>
-                            <button className='p-3 rounded-sm '>
-                                <Sun className='cursor-pointer' size={20} onClick={() => setTheme('dark')} />
+                        <div className='hover:bg-gray-100 w-11 h-10 flex justify-center cursor-pointer items-center rounded-sm'>
+                            <button className='rounded-sm '>
+                                <Sun size={20} onClick={() => { setTheme('dark'); play()}} />
                             </button>
                         </div>
                     }
                     {theme == 'dark' &&
-                        <div className='hover:bg-gray-600 w-4'>
+                        <div className='hover:bg-[#272728] w-11 h-10 flex justify-center cursor-pointer items-center rounded-sm'>
                             <button className=' rounded-sm '>
-                                <Moon className='cursor-pointer' size={20} onClick={() => setTheme('light')} />
+                                <Moon size={20} onClick={() => { setTheme('light'); play()}} />
                             </button>
                         </div>
                     }
@@ -58,8 +95,6 @@ const Navbar: React.FunctionComponent = () => {
         </nav>
     )
 }
-
-// 1a1a1e
 
 
 export default Navbar;

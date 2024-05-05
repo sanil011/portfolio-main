@@ -14,7 +14,7 @@ const Footer = () => {
     ]
 
   return (
-      <footer className='mb-12'>
+      <footer className='pb-12'>
           <ViewContainer className='flex gap-4 sm:flex-row flex-col items-center w-10/12 mx-auto max-w-[1280px] justify-between'>
               <h1 className='font-poppin text-lg md:text-2xl'>Developed By Sanil</h1>
               <div className='flex items-center gap-4'>

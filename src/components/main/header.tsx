@@ -1,11 +1,20 @@
 import React from 'react'
 import Section from '../layout/section'
+import { motion } from 'framer-motion';
+
+
 const Header = () => {
+  
     return (
         <div className='flex items-center gap-8 pt-32 '>
-            <div className="w-24 h-24 ">
-                <img className="w-full h-full rounded-full object-cover" src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
-            </div>
+            <motion.div
+                className="profile-icon-wrapper cursor-pointer w-fit h-fit"
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
+                <div className="w-24 h-24 ">
+                    <img className="w-full  transition-all hover:grayscale-0 grayscale h-full rounded-full object-cover" src='/profile.jpeg' />
+                </div>
+            </motion.div>
             <div>
                 <h1 className='text-xl sm:text-3xl dark:text-main  text-black font-semibold font-poppin'>👋 Hi, I am Sanil</h1>
                 <h1 className='font-medium text-base sm:text-xl font-poppin text-lightText dark:text-text'>Frontend Software Engineer</h1>
@@ -13,5 +22,6 @@ const Header = () => {
         </div>
     )
 }
+
 
 export default Header

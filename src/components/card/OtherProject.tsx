@@ -5,7 +5,6 @@ import { ExternalLink } from 'lucide-react';
 import { OtherProjectProps } from '../interface';
 import { cn } from '@/util/helper';
 const OtherProject = ({link,github,title,description,tech}: OtherProjectProps) => {
-    // ${ props.dark ? "bg-gray-200" : 'bg-slate-800' }
     const [isHover, setIsHover] = useState(false);
     return (
         <div
@@ -35,14 +34,12 @@ const OtherProject = ({link,github,title,description,tech}: OtherProjectProps) =
                 <div className=''>
                     <h1 className={cn('text-lg md:text-xl font-bold mb-2  animate-[all_1s_ease-in]',isHover && "text-orange")}>{title}</h1>
                     <h1 className={`text-sm md:text-base opacity-80 text-lightText dark:text-text`}>{description}</h1>
-                    {/* ${props.dark ? "text-black" : 'text-gray-300'} */}
                 </div>
 
             </header>
             <footer className='mt-4'>
                 {tech && (
                     <ul className={`flex gap-4 items-end text-lightText dark:text-text opacity-80 flex-grow flex-wrap list-none`}>
-                        {/*  ${props.dark ? "text-black" : 'text-gray-300'}  */}
                         {tech.map((tech, i) => (
                             <li className='text-sm md:text-base' key={i}>{tech}</li>
                         ))}

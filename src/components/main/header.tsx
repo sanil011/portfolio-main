@@ -14,7 +14,7 @@ const Header = () => {
             </motion.div>
             <div>
                 <h1 className='text-xl sm:text-3xl dark:text-main cursor-pointer  text-black font-semibold font-poppin'>👋 Hi, I am Sanil</h1>
-                <motion.p
+                <motion.div
                     whileHover={{ color: "orange" }}
                     onMouseEnter={() => {
                         const elem = document.getElementById("heading-post-animation");
@@ -46,7 +46,7 @@ const Header = () => {
                         }}
                     />
                     <h1 className='hover:dark:text-orange hover:text-orange cursor-pointer font-medium text-base sm:text-xl font-poppin text-lightText dark:text-text'>Frontend Software Engineer</h1>
-                </motion.p>
+                </motion.div>
             </div>
         </div>
     )

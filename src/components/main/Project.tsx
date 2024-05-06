@@ -9,7 +9,7 @@ import OtherProjectCard from '../card/OtherProject';
 const Project = () => {
 
     return (
-        <Section>
+        <Section id="project">
             <h1 className='text-lightText dark:text-main font-semibold leading-snug text-xl sm:text-3xl mb-12'>Some Things I’ve Built.</h1>
             {mainProject().map((item) => {
                 return (

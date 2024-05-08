@@ -8,8 +8,8 @@ const Header = () => {
                 className="profile-icon-wrapper cursor-pointer w-fit h-fit"
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
-                <div className="w-32 h-32 ">
-                    <img className="w-full  transition-all hover:grayscale-0 grayscale h-full rounded-full object-cover" src='/profile.jpeg' />
+                <div className="w-32 h-32 overflow-hidden rounded-full">
+                    <img className="w-[200%]  transition-all hover:grayscale-0 grayscale h-[100%] rounded-full object-cover" src='/pic2.jpeg' />
                 </div>
             </motion.div>
             <div>

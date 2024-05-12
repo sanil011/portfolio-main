@@ -10,7 +10,7 @@ const Project = () => {
 
     return (
         <Section id="project">
-            <h1 className='text-lightText dark:text-main font-semibold leading-snug text-xl sm:text-3xl mb-12'>Some Things I’ve Built.</h1>
+            <h1 className='text-lightMain dark:text-main font-semibold leading-snug text-xl sm:text-3xl mb-12'>Some Things I’ve Built.</h1>
             {mainProject().map((item) => {
                 return (
                     <ProjectCard key={item.id} {...item} />
@@ -19,7 +19,7 @@ const Project = () => {
 
             
             <Section className='mt-12'>
-                <h1 className='text-lightText dark:text-main text-center font-poppin font-semibold leading-snug text-3xl mb-12'>Other Noteworthy Projects.</h1>
+                <h1 className='text-lightMain dark:text-main text-center font-poppin font-semibold leading-snug text-3xl mb-12'>Other Noteworthy Projects.</h1>
                 <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
                     {otherProjects().map((item) => (
                         <OtherProjectCard key={item.id} {...item} />

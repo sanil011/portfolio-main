@@ -16,10 +16,12 @@ const config: Config = {
       },
       colors: {
         main: "#c1c2c6",
+        lightMain: "#000000",
         text: "#868e96",
+        // text: "#BBC4CC",
         orange: "#ffa51d",
         background: "#1A1A1E",
-        lightText:"#565656"
+        lightText: "rgb(55 65 81 )",
       },
       fontFamily: {
         inter: ["Inter Variable", "sans-serif"],

@@ -22,7 +22,7 @@ const Project: React.FunctionComponent<ProjectProps> = ({
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className={cn('flex cursor-pointer md:relative border border-gray-300 overflow-hidden rounded-md flex-col min-h-72 lg:min-h-64 mb-24', id == "2" && "md:flex-row-reverse", id == '3' && "mb-0")}>
+            className={cn('flex cursor-pointer md:relative border border-gray-300 dark:border-opacity-55 overflow-hidden rounded-md flex-col min-h-72 lg:min-h-64 mb-24', id == "2" && "md:flex-row-reverse", id == '3' && "mb-0")}>
 
             <div className={cn('w-full md:w-8/12 relative lg:w-7/12  backdrop transition-opacity overflow-hidden h-full max-h-60 md:max-h-[100%] duration-300')}>
                 <img src={pic} className={cn("w-full h-[100%] object-cover")} />
@@ -30,8 +30,8 @@ const Project: React.FunctionComponent<ProjectProps> = ({
             </div>
 
             <div className={cn('w-full md:w-6/12 md:absolute md:top-0 md:right-0 md:z-0 h-full flex flex-col gap-4 md:gap-0 justify-between md:items-end', id == '2' && 'left-0 md:items-start')}>
-                <h2 className={cn('text-lightText dark:text-main py-4 px-2 md:px-4 font-semibold leading-snug text-xl transition-colors animate-[all_1s_ease-in]', isHover && 'dark:text-orange text-orange')}>{name}</h2>
-                <h4 className={cn('text-lightText dark:text-text text-sm lg:text-base bg-gray-100 dark:bg-background rounded-[4px] p-3')}>
+                <h2 className={cn('text-lightMain dark:text-main py-4 px-2 md:px-4 font-semibold leading-snug text-xl transition-colors animate-[all_1s_ease-in]', isHover && 'dark:text-orange text-orange')}>{name}</h2>
+                <h4 className={cn('text-lightText dark:text-text  text-sm lg:text-base bg-gray-100 dark:bg-background rounded-[4px] p-3')}>
                     {about}
                 </h4>
 
@@ -46,7 +46,7 @@ const Project: React.FunctionComponent<ProjectProps> = ({
                 {/* Icon external links */}
                 <div className={cn('flex gap-6 pb-4', id == '2' ? 'pl-4' : 'pl-4 md:pr-4')}>
                     <a
-                        className=" w-[25px] h-[25px] cursor-pointer hover:text-orange"
+                        className=" w-[25px] dark:text-main text-lightMain h-[25px] cursor-pointer hover:text-orange"
                         href={githubLink}
                         aria-label="External Link"
                         target="_blank"
@@ -55,7 +55,7 @@ const Project: React.FunctionComponent<ProjectProps> = ({
                         <Github />
                     </a>
                     <a
-                        className=" w-[25px] h-[25px] cursor-pointer hover:text-orange"
+                        className=" w-[25px] dark:text-main text-lightMain h-[25px] cursor-pointer hover:text-orange"
                         href={hostedLink}
                         aria-label="External Link"
                         target="_blank"

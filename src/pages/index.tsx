@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="shortcut icon" href="/icon.ico" />
       </Head>
     <main
-      className='dark:bg-[#1a1a1e] min-h-screen'
+      className='dark:bg-[#1A1A1E] text-gray-700 min-h-screen'
     >
       <Navbar/>
       <ViewContainer className="max-w-[1280px]  w-[95%] md:w-11/12 lg:w-8/12 mx-auto">

@@ -16,7 +16,7 @@ const Footer = () => {
   return (
       <footer className='pb-12'>
           <ViewContainer className='flex gap-4 sm:flex-row flex-col items-center w-10/12 mx-auto max-w-[1280px] justify-between'>
-              <h1 className='font-poppin text-lg md:text-2xl'>Developed By Sanil</h1>
+              <h1 className='font-poppin dark:text-main text-lightMain text-lg md:text-2xl'>Developed By Sanil</h1>
               <div className='flex items-center gap-4'>
                   {icons?.map((icon,idx) => (
                       <a
@@ -24,7 +24,7 @@ const Footer = () => {
                           href={icon.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className='hover:text-orange animate-[all_1s_ease-in] active:scale-125 transition-transform hover:-translate-y-2 hover:scale-110'
+                          className=' dark:text-main text-lightMain hover:text-orange  dark:hover:text-orange animate-[all_1s_ease-in] active:scale-125 transition-transform hover:-translate-y-2 hover:scale-110'
                       >
                           {icon.icon}
                       </a>

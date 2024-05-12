@@ -20,7 +20,7 @@ const JobCard: React.FunctionComponent<JobCardProps> = ({
         <div className='flex justify-between items-center my-2 pl-2 sm:pl-6'>
             <div className='w-full'>
 
-                <h1 className="text-lightText dark:text-main pl-3 sm:pl-6 font-spaceFont text-base sm:text-xl  
+                <h1 className="text-lightMain dark:text-main pl-3 sm:pl-6 font-spaceFont text-base sm:text-xl  
               relative before:content-['▹'] before:text-[#ffa51d] before:text-lg
               before:mt-2 before:absolute before:left-0 before:leading-3">{post} </h1>
 

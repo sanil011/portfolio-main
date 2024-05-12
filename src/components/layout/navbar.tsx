@@ -30,7 +30,7 @@ const Navbar: React.FunctionComponent = () => {
     if (!mounted) return null;
 
     return (
-        <nav className='navbar | pt-6 dark:bg-[#1a1a1e]'>
+        <nav className='navbar | pt-6'>
             <ViewContainer className='flex items-center w-10/12 mx-auto max-w-[1280px] justify-end'>
                 <div className='flex items-center gap-2'>
                     <ul className='navbar-option-list | flex flex-row items-center  justify-end gap-4'>
@@ -56,7 +56,7 @@ const Navbar: React.FunctionComponent = () => {
                                             }}
                                     >
                                         <Link
-                                            className={cn('navbar-option-item list-none text-base text-black  dark:text-main hover:dark:text-orange hover:text-orange')}
+                                            className={cn('navbar-option-item list-none text-base text-lightMain  dark:text-main hover:dark:text-orange hover:text-orange')}
                                             href={item?.link}
                                             target={item.title == "Resume" ? "_blank":""}
                                             rel={item.title == "Resume" ? "noopener noreferrer":""}
@@ -93,7 +93,7 @@ const Navbar: React.FunctionComponent = () => {
                     {theme == 'dark' &&
                         <div className='hover:bg-[#272728] w-11 h-10 flex justify-center cursor-pointer items-center rounded-md'>
 
-                                <Moon size={20} onClick={() => { setTheme('light'); play()}} />
+                            <Moon size={20} color='#c1c2c6' onClick={() => { setTheme('light'); play()}} />
 
                         </div>
                     }

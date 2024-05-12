@@ -9,11 +9,11 @@ const Header = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 400, damping: 10 }}>
                 <div className="w-32 h-32 overflow-hidden rounded-full">
-                    <img className="w-[200%]  transition-all hover:grayscale-0 grayscale h-[100%] rounded-full object-cover" src='/pic2.jpeg' />
+                    <img className="w-[200%]  transition-all grayscale-0 hover:grayscale h-[100%] rounded-full object-cover" src='/pic2.jpeg' />
                 </div>
             </motion.div>
             <div>
-                <h1 className='text-xl sm:text-3xl dark:text-main cursor-pointer  text-black font-semibold font-poppin'>👋 Hi, I am Sanil</h1>
+                <h1 className='text-xl sm:text-3xl dark:text-main cursor-pointer  text-lightMain font-semibold font-poppin'>👋 Hi, I am Sanil</h1>
                 <motion.div
                     whileHover={{ color: "orange" }}
                     onMouseEnter={() => {

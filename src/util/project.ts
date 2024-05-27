@@ -79,7 +79,7 @@ export const otherProjects = () => {
     },
     {
       id: "5",
-      title: "",
+      title: "Algorithm Visualizer",
       github: "https://github.com/sanil011/Algorithm-Visualizer",
       link: "https://algorithm-visualizer-beige.vercel.app/",
       description:

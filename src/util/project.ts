@@ -79,12 +79,12 @@ export const otherProjects = () => {
     },
     {
       id: "5",
-      title: "Calender Application",
-      github: "https://github.com/sanil011/calender",
-      link: "https://calender-99b907.netlify.app/",
+      title: "",
+      github: "https://github.com/sanil011/Algorithm-Visualizer",
+      link: "https://algorithm-visualizer-beige.vercel.app/",
       description:
-        "Calender Application in which you can signup and login.Adding meeting , List of your all meeting,Delete a meeting,Update a specific meeting.",
-      tech: ["React", "Firebase", "Redux"],
+        "A simple algorithm visualizer where you can see how algorithm works",
+      tech: ["React", "Css"],
     },
     {
       id: "6",

@@ -43,6 +43,24 @@ export const otherProjects = () => {
   return [
     {
       id: "1",
+      title: "Sheets",
+      github: "https://github.com/sanil011/Estates",
+      link: "https://sanil011.github.io/ExcelClone/",
+      description:
+        "This tool offers a comprehensive range of functionalities, including isolated cell text formatting for precise customization. It enables seamless cell-to-cell relationships via formulas, ensuring that changes in one cell automatically update dependent cells, with warnings for cyclic relationships.",
+      tech: ["Javascript", "CSS", "HTML"],
+    },
+    {
+      id: "2",
+      title: "Quiz",
+      github: "https://github.com/sanil011/quiz-app",
+      link: "https://quiz-app-sanil011.vercel.app/",
+      description:
+        "A customizable quiz app designed to match your knowledge preferences. Choose from categories like Music, Entertainment, and Science, then select your preferred difficulty level—beginner, intermediate, or expert. Decide the number of questions you want, from a quick 5-question test to an extensive 50-question challenge. QuizMaster makes learning engaging and tailored to your needs.",
+      tech: ["Nextjs", "MUI", "Javascript"],
+    },
+    {
+      id: "3",
       title: "Tic Tac Toe",
       github: "https://github.com/sanil011/crafts",
       link: "https://crafts-jade.vercel.app/",
@@ -51,7 +69,16 @@ export const otherProjects = () => {
         "Create a versatile TicTacToe game with pause/resume, a disabled initial restart button, and real-time status updates. Add a history feature for seamless backward and forward navigation during gameplay.",
     },
     {
-      id: "2",
+      id: "4",
+      title: "Fruit Store",
+      github: "https://github.com/sanil011/simple-fruit-store-react-native",
+      link: "https://github.com/sanil011/simple-fruit-store-react-native",
+      description:
+        "Simple fruit store app where you can see the list of fruits and add them to your cart. You can also see the details of the fruit and remove them from the cart.",
+      tech: ["React-Native", "Javascript", "CSS"],
+    },
+    {
+      id: "5",
       title: "Calender Application",
       github: "https://github.com/sanil011/calender",
       link: "https://calender-99b907.netlify.app/",
@@ -60,21 +87,13 @@ export const otherProjects = () => {
       tech: ["React", "Firebase", "Redux"],
     },
     {
-      id: "3",
+      id: "6",
       title: "Estate",
       github: "https://github.com/sanil011/Estates",
       link: "https://estates-teal.vercel.app/",
       description:
         "Fully responsive hotel booking website that i made from scratch using react,tailwind.See the hotel according to search and book them. See the amenities that give by the hotel. We can also give ratings to hotels and see the rating given by past customers.",
       tech: ["React", "Tailwind", "Redux", "MUI"],
-    },
-    {
-      id: "4",
-      title: "Sheets",
-      github: "https://github.com/sanil011/Estates",
-      link: "https://sanil011.github.io/ExcelClone/",
-      description:"This tool offers a comprehensive range of functionalities, including isolated cell text formatting for precise customization. It enables seamless cell-to-cell relationships via formulas, ensuring that changes in one cell automatically update dependent cells, with warnings for cyclic relationships.",
-      tech: ["Javascript","CSS","HTML"],
     },
   ];
 }

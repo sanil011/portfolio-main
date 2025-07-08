@@ -4,7 +4,7 @@ const About = () => {
     return (
         <Section>
             <h1 className='text-lightMain dark:text-main font-semibold leading-snug text-xl sm:text-2xl'>About.</h1>
-            <h1 className='text-lightText dark:text-text text-base lg:text-lg lg:leading-7'>I&apos;m a 4nd year under graduate student who is enthusiastic about tech. First and foremost, I love writing code. I have been obsessed with the idea of using software to solve practical problems. This passion carried me through my education at my university. I studied new languages and algorithms and there is much yet to learn.</h1>
+            <h1 className='text-lightText dark:text-text text-base lg:text-lg lg:leading-7'>I’m a Frontend Engineer with 2 years of experience, including a year as a full-time Software Engineer and a year as an intern. I’m skilled in React, Next.js, Typescript, and UI/UX, and have worked on building high-performance web apps while focusing on delivering smooth, user-friendly experiences.</h1>
         </Section>
     )
 }

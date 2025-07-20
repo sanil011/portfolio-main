@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { cn } from '@/util/helper'
 import { Github } from 'lucide-react';
 import { ExternalLink } from 'lucide-react';
@@ -12,12 +12,10 @@ const Project: React.FunctionComponent<ProjectProps> = ({
     techStack,
     githubLink,
     hostedLink,
-    about
+    about,
+    time
 }) => {
     const [isHover, setIsHover] = useState(false);
-    useEffect(() => {
-        console.log(isHover)
-    },[isHover])
     return (
         <div
             onMouseEnter={() => setIsHover(true)}
@@ -30,7 +28,13 @@ const Project: React.FunctionComponent<ProjectProps> = ({
             </div>
 
             <div className={cn('w-full md:w-6/12 md:absolute md:top-0 md:right-0 md:z-0 h-full flex flex-col gap-4 md:gap-0 justify-between md:items-end', id == '2' && 'left-0 md:items-start')}>
-                <h2 className={cn('text-lightMain dark:text-main py-4 px-2 md:px-4 font-semibold leading-snug text-xl transition-colors animate-[all_1s_ease-in]', isHover && 'dark:text-orange text-orange')}>{name}</h2>
+
+                <div>
+                    <h2 className={cn('text-lightMain dark:text-main pt-4 px-2 md:px-4 font-semibold leading-snug text-xl transition-colors animate-[all_1s_ease-in]', isHover && 'dark:text-orange text-orange')}>
+                        {name}
+                    </h2>
+                    <p className={cn('text-right px-2 md:px-4 text-lightText dark:text-text',id == '2' &&'text-left')}>{time}</p>
+                </div>
                 <h4 className={cn('text-lightText dark:text-text  text-sm lg:text-base bg-gray-100 dark:bg-background rounded-[4px] p-3')}>
                     {about}
                 </h4>

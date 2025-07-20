@@ -7,6 +7,7 @@ export const mainProject = () => {
       pic: "/newSketch.png",
       hostedLink: "https://sketch-board-two.vercel.app/",
       techStack: ["Vite", "React", "Typescript", "Css"],
+      time: "Jan,2024",
       about:
         "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience.",
     },
@@ -16,6 +17,7 @@ export const mainProject = () => {
       githubLink: "https://github.com/sanil011/code-share",
       pic: "/codeboard.png",
       hostedLink: "https://code-share-ny9d.onrender.com",
+      time: "Jan,2024",
       techStack: [
         "Reactjs",
         "ContextApi",
@@ -32,6 +34,7 @@ export const mainProject = () => {
       githubLink: "https://github.com/sanil011/watch-store",
       pic: "/watch.png",
       hostedLink: "https://watch-store-sand.vercel.app/",
+      time: "Jan,2023",
       about:
         "An E-commerce app for watch. Users can filter the watch according to brand, price, strap and colour. Users can also add watches to their wishlists.",
       techStack: ["Next.js", "MUI", "Redux"],

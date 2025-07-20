@@ -6,6 +6,7 @@ export interface ProjectProps {
   githubLink: string;
   hostedLink: string;
   about: string;
+  time:string
 }
 
 export interface OtherProjectProps {

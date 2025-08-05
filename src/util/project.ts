@@ -6,7 +6,7 @@ export const mainProject = () => {
       githubLink: "https://github.com/sanil011/SketchBoard",
       pic: "/newSketch.png",
       hostedLink: "https://sketch-board-two.vercel.app/",
-      techStack: ["Vite", "React", "Typescript", "Css"],
+      techStack: ["Vite", "React", "Typescript", "Tailwindcss"],
       time: "Jan,2024",
       about:
         "Express your creativity by sketching anything on the canvas.Save and download your artistic creations.Utilize the zoom functionality for a closer look.Enjoy the panning feature, offering the illusion of an infinite canvas.Take advantage of the Undo and Redo features for added convenience.",
@@ -21,7 +21,7 @@ export const mainProject = () => {
       techStack: [
         "Reactjs",
         "ContextApi",
-        //   "Tailwindcss",
+          "Tailwindcss",
         "Expressjs",
         "Socket.io",
       ],
